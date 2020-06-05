@@ -8,6 +8,14 @@ body {
   opacity: 1;
 }
 
+#shopimage {
+  padding: 15px;
+}
+
+#shopimage:hover .overlay {
+  opacity: 0.8;
+}
+
 #about-image {
   filter: brightness(84%) contrast(0%);
 }
@@ -39,7 +47,7 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: .25s ease;
+  transition: .25s ease-in-out;
   background-color: rgba(0, 0, 0, 0.85);
 }
 

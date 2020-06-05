@@ -16,8 +16,8 @@
   <!-- Local CSS -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/webstyle.css">
-  <script
-    src="https://www.paypal.com/sdk/js?client-id=AeITVx6TUi2l30hWCKzaX7eEdm8giBeyNf7jnd7oMcV18hBPIGsLvSx8BmLK8xBi6kIfKVrLQKSKSSWH&currency=GBP"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
+  <script src="https://www.paypal.com/sdk/js?client-id=AeITVx6TUi2l30hWCKzaX7eEdm8giBeyNf7jnd7oMcV18hBPIGsLvSx8BmLK8xBi6kIfKVrLQKSKSSWH&currency=GBP">
+    // Required. Replace SB_CLIENT_ID with your sandbox client ID.
   </script>
 
 
@@ -28,10 +28,10 @@
         return actions.order.create({
           purchase_units: [{
             reference_id: "PUHF",
-                description: "Deadpool Print",
+            description: "Deadpool Print",
             amount: {
               currency_code: 'GBP',
-              value: '0.10'
+              value: '17.50'
             }
           }]
         });
@@ -49,23 +49,23 @@
 
 
 
-<!-- Hotjar Tracking Code for www.kieranshalloodesign.com -->
-<script>
-  (function(h, o, t, j, a, r) {
-    h.hj = h.hj || function() {
-      (h.hj.q = h.hj.q || []).push(arguments)
-    };
-    h._hjSettings = {
-      hjid: 1841559,
-      hjsv: 6
-    };
-    a = o.getElementsByTagName('head')[0];
-    r = o.createElement('script');
-    r.async = 1;
-    r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-    a.appendChild(r);
-  })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-</script>
+  <!-- Hotjar Tracking Code for www.kieranshalloodesign.com -->
+  <script>
+    (function(h, o, t, j, a, r) {
+      h.hj = h.hj || function() {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 1841559,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -96,7 +96,7 @@
       <div class="navbar-nav">
         <a class="nav-item nav-link active" style="padding-right: 2rem" href="/">Home </a>
         <a class="nav-item nav-link" style="padding-right: 2rem" href="/portfolio">Design Work</a>
-        <a class="nav-item nav-link" style="padding-right: 2rem" href="/illustration">Illustration Work</a>
+        <a class="nav-item nav-link" style="padding-right: 2rem" href="/illustration">Illustration Work</a><a class="nav-item nav-link" style="padding-right: 2rem" href="/Store">Store</a>
 
       </div>
     </div>
@@ -116,33 +116,34 @@
     <div class="container">
 
 
-    <div class="row">
-      <div class="col-md-4">
-        <h2 style="color:#009999">Deadpool</h2>
-        <p>Promotional Poster for the launch of the Deadpool film</p>
-        <h4>Edition Size</h4>
-        <p>100</p>
-        <h4>Size</h4>
-        <p>21 x 42 cm</p>
+      <div class="row">
+        <div class="col-md-4">
+          <h2 style="color:#009999">Deadpool</h2>
+          <p>Promotional Poster for the launch of the Deadpool film</p>
+
+          <h4>Size</h4>
+          <p>21 x 42 cm</p>
+
+          <div style="margin-top:3em">
+            <h4>Price</h4>
+            <p>17.50</p>
+            <p style="font-size: 0.8rem">Includes 2.50 P&P</p>
+            <div id="paypal-button-container"></div>
+          </div>
 
 
 
 
-          <div id="paypal-button-container"></div>
+        </div>
 
-
-
+        <div class="col-md-8">
+          <source srcset="/images/illustration/deadpool.webp" type="image/webp">
+          <source srcset="/images/illustration/deadpool.jpg" type="image/jpg">
+          <img src="/images/illustration/deadpool.jpg" style="width:100%" alt="Deadpool print in frame" class="img-fluid">
+        </div>
 
       </div>
-
-      <div class="col-md-8">
-        <source srcset="/images/illustration/deadpool.webp" type="image/webp">
-        <source srcset="/images/illustration/deadpool.jpg" type="image/jpg">
-        <img src="/images/illustration/deadpool.jpg" style="width:100%" alt="YouView Mobile app tile" class="img-fluid">
-      </div>
-
     </div>
-  </div>
   </div>
 
 
